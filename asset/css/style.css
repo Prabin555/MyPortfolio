@@ -1,0 +1,129 @@
+ 
+
+
+html{
+    scroll-behavior: smooth;
+  }
+
+  body {
+    margin: 0px;
+    padding: 0;
+    box-sizing: border-box;
+    background: linear-gradient(112.1deg, rgb(32, 38, 57) 11.4%, rgb(63, 76, 119) 70.2%);
+  }
+
+/* For navbar */
+.ram{
+	transition: all 0.3s linear;
+	position: relative;
+	text-decoration: none;
+}
+ .ram::after{
+ content: '';
+height: 2px;
+width: 100%;
+background-color: greenyellow;
+position: absolute;
+bottom: 0;
+left: 0;
+transition: all 0.3s; opacity: 0
+
+
+
+ }
+ 
+.ram:hover::after{
+
+opacity: 1;
+ 
+}
+.work_gallery{
+	display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 98%;
+  margin: 0 auto;
+}
+.work_gallery a{
+		height: 330px;
+		width: 380px;
+		
+    margin: 5px;
+    padding: 10px;
+		border-radius: 5px;
+		overflow: hidden;
+		box-shadow: 0 3px 5px #000;
+}
+.work_gallery a img{
+   height: 100%;
+   width: 100%;
+   padding:10px;
+   object-fit: cover;
+}
+.work_gallery a img:hover{
+   transform:scale(1.4);
+   margin: 0px;
+}
+/* 
+ for home section parallax effect
+*/
+/* .parallax{
+  width: 100%;
+  height: auto;
+  background-image: url(asset/01.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%, 100%;
+  background-attachment: fixed;
+} */
+
+
+ /* for service section */
+ .service{
+
+  border : 2px solid cyan;
+  background: rgb(134, 177, 230);
+ 
+  transition: transform 0.5s;
+  color: black;
+
+ }
+
+ .web_img{
+  width: 100px;
+  height: 100px;
+  padding-left: 0.5em;
+  padding-top: 0.5em;
+ }
+ .service:hover{
+  transform: translateY(-10px)
+ }
+
+
+
+ /* for note section */
+ .note{
+  border:2px solid rebeccapurple;
+ }
+
+
+
+ /* for contact section */
+ .decoration2 a{
+  text-decoration: none;
+  color: white;
+ }
+
+
+ /* for contact us form */
+ .myform{
+  background:rgba(255, 255, 255, 0.1); backdrop-filter:blur(10px);
+  border-radius : 90px 25px 25px 25px;
+  width : 550px;
+  height : 400px;
+ }
+
+
+ /* For foooter */
+ .decoration li i a{
+  text-decoration: none;
+ }
